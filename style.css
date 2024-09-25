@@ -50,10 +50,42 @@ section {
   background-position: center;
   background-attachment: fixed;
 }
+/* *-----responsive start */
+@media (min-width: 1151px) and (max-width: 1360px) {
+    .main {
+        min-height: 90vh;
+        background: url('/image/respo pic 1.png') no-repeat;
+    }
+}
+@media  (max-width: 1150px) {
+    section {
+        padding-top: 5px;
+        
+      }
+    .main {
+        min-height: 100vh;
+        background: url('/image/cropped.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+/* *-----responsive END */
+
 .main h2 {
   color: rgb(63, 63, 114);
   font-size: 1.8em;
   font-weight: 500;
+}
+@media  (max-width: 1150px){
+    section {
+        padding-top: 150px;
+        
+      }
+    .main h2{
+        font-size: 1.3em;
+        font-weight: 500;
+    }
 }
 .main h2 span {
   display: inline-block;
@@ -62,6 +94,12 @@ section {
   font-size: 3em;
   font-weight: 600;
 }
+@media  (max-width: 1150px){
+    .main h2 span{
+        margin-top: 0px;
+        font-size: 3em;
+    }
+}
 .main h3 {
   color: rgb(63, 63, 114);
   font-size: 1.5em;
@@ -69,6 +107,13 @@ section {
   letter-spacing: 1px;
   margin-top: -10px;
   margin-bottom: 12px;
+}
+@media  (max-width: 1150px){
+    .main h3{
+        margin-top: 0;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
 }
 .main-btn {
   color: #fff;
@@ -87,8 +132,18 @@ section {
   background-color: rgb(63, 63, 114);
   transform: scale(1.1);
 }
+@media  (max-width: 1150px){
+    .main-btn{
+        font-size: 0.8em;
+    }
+}
 .social-icons{
     padding-left: 33px;
+}
+@media  (max-width: 1150px){
+    .social-icons{
+        padding-left: 0px;
+    }
 }
 .social-icons a {
     color: rgb(63, 63, 114);;
