@@ -23,6 +23,7 @@ header {
   align-items: center;
 }
 
+
 /* --start sidebar */
 #menu-icon{
   font-size: 2rem;
@@ -32,6 +33,7 @@ header {
   margin-left:-40px;
 }
 /***RESPONSIVE */
+/* tablet */
 @media(max-width: 1150px){
   #menu-icon{
     display: block;
@@ -41,6 +43,19 @@ header {
     display: none;
   }
 }
+
+
+/* phones */
+@media (max-width: 739px){
+  header{
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
 .slide{
   height:49vh;
   width: 180px;
@@ -95,19 +110,20 @@ header {
   padding-left: 10px;
  }
 
-
-
-
-
-
-
 /* --END sidebar */
+
+
 .logo {
- 
   color: var(--blue);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8em;
+}
+/* phones */
+@media (max-width: 739px){
+  .logo{
+    margin-right: -10px;
+  }
 }
 .navigation a {
   color: white;
@@ -154,7 +170,7 @@ section {
         background-attachment: fixed;
     }
 }
-/* phons */
+/* phones */
 @media (max-width: 739px) {
   section {
     padding: 0px 18px;
@@ -200,7 +216,7 @@ section {
         font-size: 3em;
     }
 }
-/* phons */
+/* phones */
 @media (max-width: 739px){
   .main h2 span{
     font-size: 2em;
@@ -224,7 +240,7 @@ section {
         margin-bottom: 20px;
     }
 }
-/* phons */
+/* phones */
 @media (max-width: 739px){
   .main h3{
     font-size: 0.74em;
@@ -256,7 +272,7 @@ section {
         font-size: 0.8em;
     }
 }
-/* phons */
+/* phones */
 @media (max-width: 739px){
   .main-btn{
     margin-top: 13px;
@@ -277,7 +293,7 @@ section {
     font-size: 1.7em;
     padding-right: 30px;
 }
-/* phons */
+/* phones */
 @media (max-width: 739px){
   .social-icons{
     padding-left: 20px; 
