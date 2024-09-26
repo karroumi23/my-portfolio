@@ -134,6 +134,7 @@ section {
   background-attachment: fixed;
 }
 /* *-----responsive start */
+/* tablet */
 @media (min-width: 1151px) and (max-width: 1360px) {
     .main {
         min-height: 90vh;
@@ -153,6 +154,20 @@ section {
         background-attachment: fixed;
     }
 }
+/* phons */
+@media (max-width: 739px) {
+  section {
+    padding: 0px 18px;
+  }
+  .main {
+      min-height: 86vh;
+      background: url('/image/couverture\ for\ phones\ 2.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding-top: 0;
+  }
+}
 /* *-----responsive END */
 
 .main h2 {
@@ -160,6 +175,7 @@ section {
   font-size: 1.8em;
   font-weight: 500;
 }
+/* tablet */
 @media  (max-width: 1150px){
     section {
         padding-top: 150px;
@@ -177,11 +193,20 @@ section {
   font-size: 3em;
   font-weight: 600;
 }
+/* tablet */
 @media  (max-width: 1150px){
     .main h2 span{
         margin-top: 0px;
         font-size: 3em;
     }
+}
+/* phons */
+@media (max-width: 739px){
+  .main h2 span{
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 13px;
+  }
 }
 .main h3 {
   color: rgb(63, 63, 114);
@@ -191,6 +216,7 @@ section {
   margin-top: -10px;
   margin-bottom: 12px;
 }
+/* tablet */
 @media  (max-width: 1150px){
     .main h3{
         margin-top: 0;
@@ -198,6 +224,16 @@ section {
         margin-bottom: 20px;
     }
 }
+/* phons */
+@media (max-width: 739px){
+  .main h3{
+    font-size: 0.74em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 13px;
+  }
+}
+
 .main-btn {
   color: #fff;
   background-color: var(--blue);
@@ -214,22 +250,41 @@ section {
   background-color: rgb(63, 63, 114);
   transform: scale(1.1);
 }
+/* tablet */
 @media  (max-width: 1150px){
     .main-btn{
         font-size: 0.8em;
     }
 }
+/* phons */
+@media (max-width: 739px){
+  .main-btn{
+    margin-top: 13px;
+  }
+}
 .social-icons{
     padding-left: 33px;
 }
+/* tablet */
 @media  (max-width: 1150px){
     .social-icons{
         padding-left: 0px;
     }
 }
+
 .social-icons a {
     color: rgb(63, 63, 114);;
     font-size: 1.7em;
     padding-right: 30px;
+}
+/* phons */
+@media (max-width: 739px){
+  .social-icons{
+    padding-left: 20px; 
+    margin-top: 13px; 
+   }
+   .social-icons a {
+    padding-right: 20px;
+   }
 }
 /*  -------------------------END section */
