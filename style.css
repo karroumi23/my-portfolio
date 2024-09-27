@@ -13,7 +13,8 @@
 
 /*  -------------------------Start header */
 header {
-  background-color: #333;
+  /* background-color: #C2C2C2; */
+  background-color: #1B1F24;
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -79,8 +80,8 @@ header {
   width: 100%;
   height: auto;
   font-size: 1.3rem;
-  background-color: #9e9696;
-    color: var(--blue);
+  background-color: var(--blue);
+    color: #fff;
     font-weight: 500;
     text-align: center;
     align-items: center;
@@ -119,12 +120,14 @@ header {
   font-weight: 700;
   font-size: 1.8em;
 }
+ 
 /* phones */
 @media (max-width: 739px){
   .logo{
     margin-right: -10px;
   }
 }
+
 .navigation a {
   color: white;
   font-size: 1.1em;
@@ -141,13 +144,28 @@ section {
 }
 .main {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
-  background: url(/image/couverture\ 9.png) no-repeat;
+  background: url(/image/background.jpg) no-repeat;
+  background-color: #1B1F24;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.main::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-attachment: fixed;
+}
+.main *{
+  position: relative;
+  z-index: 2;
 }
 /* *-----responsive start */
 /* tablet */
@@ -187,7 +205,8 @@ section {
 /* *-----responsive END */
 
 .main h2 {
-  color: rgb(63, 63, 114);
+  /* color: rgb(63, 63, 114); */
+  color: #fff;
   font-size: 1.8em;
   font-weight: 500;
 }
@@ -206,7 +225,7 @@ section {
   display: inline-block;
   margin-top: -15px;
   color: var(--blue);
-  font-size: 3em;
+  font-size: 2.7em;
   font-weight: 600;
 }
 /* tablet */
@@ -225,7 +244,8 @@ section {
   }
 }
 .main h3 {
-  color: rgb(63, 63, 114);
+  /* color: rgb(63, 63, 114); */
+  color:#fff;
   font-size: 1.5em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -253,7 +273,6 @@ section {
 .main-btn {
   color: #fff;
   background-color: var(--blue);
-  font-size: 1.1em;
   font-weight: 600;
   display: inline-block;
   padding: 0.9375em 2.1875em;
@@ -289,7 +308,8 @@ section {
 }
 
 .social-icons a {
-    color: rgb(63, 63, 114);;
+    /* color: rgb(63, 63, 114); */
+    color: #fff;
     font-size: 1.7em;
     padding-right: 30px;
 }
@@ -303,4 +323,8 @@ section {
     padding-right: 20px;
    }
 }
+.myimg {
+   margin-bottom: -7.3rem;
+}
 /*  -------------------------END section */
+
