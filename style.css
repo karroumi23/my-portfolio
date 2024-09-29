@@ -346,6 +346,9 @@ header.sticky{
     color: #fff;
     font-size: 1.7em;
 }
+.social-icons a:hover{
+   color:rgb(63, 63, 114) ;
+}
 /* phones */
 @media (max-width: 739px){
   .social-icons{
