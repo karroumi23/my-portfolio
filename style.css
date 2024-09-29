@@ -370,5 +370,48 @@ header.sticky{
 
 
 /*  -------------------------END HOME-section */
+/*  -------------------------START ABOUT-section */
+.about{
+  padding: 110px 10% 90px;
+  background: var(--second-bg-color);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 1rem;
+}
+.about-img img{
+   width: 100%;
+   height: 430px;
+   max-width: 430px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 7px solid var(--blue);
+   box-shadow:  0 0 20px var(--blue);
+}
+.about-text h2{
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.about-text h2 span{
+  color: var(--blue);
+}
+.exp-area{
+  margin-bottom: 30px;
+}
+.exp-area p{
+  color: #fff;
+  font-weight: 600;
+  font-size:19px;
+  line-height: 42px;
+}
+.exp-area p span{
+  color: #c3cad5;
+  font-size:1rem ;
+  font-weight: 400;
+  margin-left: 8px;
+}
+/*  -------------------------END ABOUT-section */
 
 
