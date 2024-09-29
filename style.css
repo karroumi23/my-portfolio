@@ -225,7 +225,7 @@ section {
 }
 .main h2 span {
   display: inline-block;
-  margin-top: -15px;
+  margin-top: 8px;
   color: var(--blue);
   font-size: 2.7em;
   font-weight: 600;
@@ -248,11 +248,10 @@ section {
 .main h3 {
   /* color: rgb(63, 63, 114); */
   color:#fff;
-  font-size: 1.5em;
-  font-weight: 700;
+  font-size: 1.4em;
+  font-weight: 600;
   letter-spacing: 1px;
-  margin-top: -10px;
-  margin-bottom: 12px;
+  margin-top: 8px;
 }
 /* tablet */
 @media  (max-width: 1150px){
@@ -271,7 +270,10 @@ section {
     margin-top: 13px;
   }
 }
-
+.box-btn{
+  margin-top: 40px;
+  display: flex;
+}
 .main-btn {
   margin-right: 10px;
   color: #fff;
