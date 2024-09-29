@@ -313,6 +313,9 @@ section {
 }
 .social-icons{
     padding-left: 33px;
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
 }
 /* tablet */
 @media  (max-width: 1150px){
@@ -325,7 +328,7 @@ section {
     /* color: rgb(63, 63, 114); */
     color: #fff;
     font-size: 1.7em;
-    padding-right: 30px;
+    /* padding-right: 30px; */
 }
 /* phones */
 @media (max-width: 739px){
