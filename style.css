@@ -392,24 +392,13 @@ header.sticky{
   position: relative;
   background: linear-gradient(to right, #22282F, #eee, #22282F);
 }
-/* .about .title::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -50px;
-  width: 600px;
-  margin-left: -300px;
-  margin-top: -220px;
-  height: 600px;
-  background: radial-gradient(50% 50%, ellipse closest-side, #444, black);
-  z-index: -1;
-} */
+
 .about .title .link {
   background:var(--second-bg-color);
   display: block;
-  padding: 4px;
+  padding: 2px;
   text-decoration: none;
-  letter-spacing: 30px;
+  letter-spacing: 25px;
   color: white;
 }
 /* end title */
