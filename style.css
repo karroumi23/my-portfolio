@@ -375,13 +375,13 @@ header.sticky{
 /*  -------------------------END HOME-section */
 /*  -------------------------START ABOUT-section */
 .about{
-  padding:25px 10% 18px;
+  padding:60px 10% 11px;
   background: var(--second-bg-color);
 }
 
 
 /* start-title */
-.about .title { 
+ .title { 
   margin-bottom:  22px;
   text-align: center;
   color: white;
@@ -393,7 +393,7 @@ header.sticky{
   background: linear-gradient(to right, #22282F, #eee, #22282F);
 }
 
-.about .title .link {
+ .title .link {
   background:var(--second-bg-color);
   display: block;
   padding: 2px;
@@ -402,7 +402,6 @@ header.sticky{
   color: white;
 }
 /* end title */
-
 
 
 .box-content{
@@ -466,8 +465,9 @@ header.sticky{
   margin-left: 8px;
 }
 
-
-
 /*  -------------------------END ABOUT-section */
+.projects{
+  background: var(--second-bg-color);
+}
 
 
