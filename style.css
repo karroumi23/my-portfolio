@@ -375,8 +375,48 @@ header.sticky{
 /*  -------------------------END HOME-section */
 /*  -------------------------START ABOUT-section */
 .about{
-  padding: 110px 10% 90px;
+  padding:15px 10% 18px;
   background: var(--second-bg-color);
+}
+
+
+/* start-title */
+.about .title { 
+  margin-bottom: 34px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 1px;
+  font-family: 'Raleway', cursive;
+  font-weight: 100;
+  position: relative;
+  background: linear-gradient(to right, #22282F, #eee, #22282F);
+}
+/* .about .title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 600px;
+  margin-left: -300px;
+  margin-top: -220px;
+  height: 600px;
+  background: radial-gradient(50% 50%, ellipse closest-side, #444, black);
+  z-index: -1;
+} */
+.about .title .link {
+  background:var(--second-bg-color);
+  display: block;
+  padding: 4px;
+  text-decoration: none;
+  letter-spacing: 30px;
+  color: white;
+}
+/* end title */
+
+
+
+.box-content{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
@@ -415,6 +455,9 @@ header.sticky{
   font-weight: 400;
   margin-left: 8px;
 }
+
+
+
 /*  -------------------------END ABOUT-section */
 
 
