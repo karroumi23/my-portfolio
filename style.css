@@ -293,7 +293,6 @@ header.sticky{
 
 .main-btn:hover{
   background-color: rgb(63, 63, 114);
-  transform: scale(1.1);
   box-shadow: 0 0 8px var(--blue);
 }
 .btn--download{
@@ -490,7 +489,7 @@ header.sticky{
     width: 100%;
     border-radius: 28px;
     margin-bottom: 1.4rem;
-    transition: all 0.90s ease;
+    transition: all 0.70s ease;
 }
 .projects-content .row img:hover{
   transform: scale(1.1);
@@ -517,6 +516,9 @@ header.sticky{
    color: #fff;
    background: #075fe4;
 }
-
+.projects-content  .row-icon i:hover{
+  background-color: rgb(63, 63, 114);
+  box-shadow: 0 0 8px var(--blue);
+}
 
 /* ---------------------------END-projects */
