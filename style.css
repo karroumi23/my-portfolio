@@ -490,6 +490,10 @@ header.sticky{
     width: 100%;
     border-radius: 28px;
     margin-bottom: 1.4rem;
+    transition: all 0.90s ease;
+}
+.projects-content .row img:hover{
+  transform: scale(1.1);
 }
 .projects-content .main-row{
    display: flex;
