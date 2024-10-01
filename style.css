@@ -472,7 +472,7 @@ header.sticky{
 }
 .projects-content{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+  grid-template-columns: repeat(auto-fit, minmax(280px,auto));
   align-items: center;
   gap: 2.3rem;
   margin-top: 4.2rem;
@@ -503,20 +503,27 @@ header.sticky{
 }
 .projects-content .row h5{
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color:#c3cad5 ;
+}
+/* phones */
+@media (max-width: 1296px){
+  .projects-content .row h5{
+    font-size: 13px;
+    font-weight: 600;
+    color:#c3cad5 ;
+  }
 }
 .projects-content  .row-icon i{
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   width: 40px;
-   height: 40px;
+   width: 35px;
+   height: 35px;
    font-size: 17px;
    border-radius: 50%;
    color: #fff;
    background: #075fe4;
-   
 }
 .projects-content  .row-icon i:hover{
   background-color: rgb(63, 63, 114);
