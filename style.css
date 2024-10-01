@@ -481,6 +481,7 @@ header.sticky{
   background: #2d343f;
   border-radius: 28px;
   border: 1px solid transparent;
+  box-shadow: 0 0 5px #13bbff;
   padding: 20px;
   transition: all .50s ease;
 }
@@ -515,6 +516,7 @@ header.sticky{
    border-radius: 50%;
    color: #fff;
    background: #075fe4;
+   
 }
 .projects-content  .row-icon i:hover{
   background-color: rgb(63, 63, 114);
