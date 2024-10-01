@@ -520,7 +520,7 @@ header.sticky{
 }
 .projects-content  .row-icon i:hover{
   background-color: rgb(63, 63, 114);
-  box-shadow: 0 0 8px var(--blue);
+  box-shadow: 0 0 2px var(--blue);
 }
 
 /* ---------------------------END-projects */
