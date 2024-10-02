@@ -477,14 +477,14 @@ header.sticky{
   gap: 2.3rem;
   margin-top: 4.2rem;
 }
-.projects-content .row{
+.projects-content .row{  
+  height: fit-content;
   background: #2d343f;
   border-radius: 28px;
   border: 1px solid transparent;
   box-shadow: 0 0 5px #13bbff;
   padding: 20px;
   transition: all .50s ease;
-  height: fit-content;
 }
 
 
