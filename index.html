@@ -16,7 +16,7 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
      <div class="fas fa-bars" id="menu-icon" onclick="showMenu()"></div>
        <div class="slide" id="slide-bar" >
         <h1>MENU</h1>
-        <a href="#houm"><i class="fa-solid fa-house"></i> Houm</a>
+        <a href="#houm"><i class="fa-solid fa-house"></i> Home</a>
         <a href="#about"><i class="fa-solid fa-address-card"></i> About</a>
         <a href="#projects"><i class="fa-solid fa-globe"></i> Projects</a>
         <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>             
@@ -108,10 +108,10 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
 
   <!-- ------------------END ABOUT-section -->
   <!----- ------------------START-projects -->
-      <section class="projects" id="projects">
+   <section class="projects" id="projects">
+          <h1 class="title"><a href="#about" class="link" >PROJECTS</a></h1>
+    <div class="projects-content">
 
-        <h1 class="title"><a href="#about" class="link" >PROJECTS</a></h1>
-        <div class="projects-content">
              <div class="row">
                <img src="/image/travel-agency 1.png" >
                <div class="main-row">
@@ -121,8 +121,15 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
                   <div class="row-icon">
                      <a href="https://travel-agency-0.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
                      <a href="https://github.com/karroumi23/Travel-agency-1.git"target="_blank"> <i class="fa-brands fa-github"></i></a>
-                  </div>  
-               </div>            
+                  </div>                
+               </div>     
+               <button class="description-btn" id="descriptionBtn">Description</button>
+               <p class="description-paragraph" id="descriptionParagraph">
+                  This project is a fully responsive and interactive
+                   travel agency website built using JavaScript, HTML,
+                    and CSS. The website is designed to offer a seamless
+                     user experience with a modern and clean design.
+               </p>       
             </div>  
             
             
@@ -136,11 +143,44 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
                  <a href="https://product-management-system-crud.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
                  <a href="https://github.com/karroumi23/CRUD-Product-Management-System.git" target="_blank"> <i class="fa-brands fa-github"></i></a>
                </div>  
-            </div>  
+             </div>  
+             <button class="description-btn" id="descriptionBtn" >Description</button>
+             <p class="description-paragraph" id="descriptionParagraph">
+                This project is a fully functional Product Management System that 
+                allows users to manage product data efficiently through basic CRUD
+                (Create, Read, Update, Delete) operations. Built with vanilla JavaScript,
+                HTML, and CSS, the system features a user-friendly interface,
+             </p>
            </div>  
 
 
-           <div class="row">
+         <div class="row">
+          <img src="/image/create facture-enligne 4.png" >
+            <div class="main-row">
+                <div class="row-text">
+                      <h5>Facture En Ligne</h5>
+                </div>
+                <div class="row-icon">
+                     <a href="https://facture-enligne-1.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
+                     <a href="https://github.com/karroumi23/facture-en-ligne-1.git" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                </div>  
+            </div>  
+            <button class="description-btn" id="descriptionBtn" >Description</button>
+            <p class="description-paragraph" id="descriptionParagraph">
+                Facture-en-Ligne is a web-based invoicing application built to
+                streamline the invoicing process for businesses and freelancers.
+                This user-friendly platform allows users to effortlessly create, 
+                manage effortlessly, and. With its intuitive interface, 
+                businesses can customize invoice templates, add client details,
+                itemize products and services, and track payment status with ease. 
+                Designed with simplicity and efficiency in mind, Facture-en-Ligne 
+                saves time by automating repetitive tasks and offering a seamless 
+                experience for users seeking to manage their billing processes efficiently.
+            </p>
+         </div>   
+
+         
+         <div class="row">
             <img src="/image/image-editor 3.png" >
             <div class="main-row">
                <div class="row-text">
@@ -151,22 +191,17 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
                   <a href="https://github.com/karroumi23/Image-editor.git" target="_blank"> <i class="fa-brands fa-github"></i></a>
                </div>  
             </div> 
-         </div>  
+            <button class="description-btn" id="descriptionBtn" >Description</button>
+            <p class="description-paragraph" id="descriptionParagraph">
+               This is a simple yet powerful web-based image editor. Users can upload an 
+               image, apply various filters such as brightness, contrast, grayscale, and
+                more, to enhance or stylize the image. After editing, the image can be
+                 downloaded in its new form. Built with HTML, CSS, and JavaScript, this app 
+                 provides a streamlined interface for quick and easy image enhancements.
 
-
-         <div class="row">
-          <img src="/image/create facture-enligne 4.png" >
-          <div class="main-row">
-            <div class="row-text">
-               <h5>Facture En Ligne</h5>
-            </div>
-            <div class="row-icon">
-               <a href="https://facture-enligne-1.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
-               <a href="https://github.com/karroumi23/facture-en-ligne-1.git" target="_blank"> <i class="fa-brands fa-github"></i></a>
-            </div>  
+            </p>
+            
          </div>  
-         </div> 
-         
 
          <div class="row">
           <img src="/image//Driver Training Center 5.png" >
@@ -178,25 +213,43 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
                <a href="https://eduschool-site-web.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
                <a href="https://github.com/karroumi23/Eduscol-site-web.git" target="_blank"> <i class="fa-brands fa-github"></i></a>
             </div>  
-         </div>  
-       </div>  
+          </div>
+          <button class="description-btn" id="descriptionBtn" >Description</button>
+          <p class="description-paragraph" id="descriptionParagraph">
+            This web application is designed to showcase the services 
+             offered by a professional driver card center. The site provides a clear and
+             user-friendly interface where drivers can view all the available 
+             services related to acquiring, renewing, and managing their professional driver's card.
 
-       <div class="row">
-        <img src="/image/scrolling-website 6.png" >
-        <div class="main-row">
-         <div class="row-text">
-            <h5>Scrolling Website</h5>
-         </div>
-         <div class="row-icon">
-            <a href="https://scrolling-website-anass.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
-            <a href="https://github.com/karroumi23/Scrolling-Website.git" target="_blank"> <i class="fa-brands fa-github"></i></a>
-         </div>  
-      </div>  
-     </div>  
+
+          </p>  
+        </div>  
+
+        <div class="row">
+         <img src="/image/scrolling-website 6.png" >
+         <div class="main-row">
+           <div class="row-text">
+              <h5>Scrolling Website</h5>
+           </div>
+           <div class="row-icon">
+              <a href="https://scrolling-website-anass.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
+              <a href="https://github.com/karroumi23/Scrolling-Website.git" target="_blank"> <i class="fa-brands fa-github"></i></a>
+           </div>  
+         </div> 
+         <button class="description-btn" id="descriptionBtn" >Description</button>
+          <p class="description-paragraph" id="descriptionParagraph"> 
+            This project is a Scrolling Website designed with JavaScript, HTML, 
+            and CSS. The website features smooth scrolling effects that create a 
+            dynamic and engaging user experience as visitors navigate through
+             the content. ( to practice JavaScript )
+
+
+          </p> 
+        </div>  
        
-        </div>
+    </div>
         
-      </section>
+   </section>
   <!-- ------------------END-projects ----->
 
 
