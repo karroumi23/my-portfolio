@@ -23,7 +23,22 @@ window.addEventListener("scroll", function () {
 
 // create function to display and hiding description paragraph
 
-// let descriptionBtn = document.getElementById("descriptionBtn");
-// let descriptionParagraph = document.getElementById("descriptionParagraph");
+// Select all toggle buttons
+const descriptionBtn = document.querySelectorAll('.description-btn');
+
+// Add click event listener to each button
+descriptionBtn.forEach(button => {
+  button.addEventListener('click', function() {
+    // Get the associated description element in the same card
+    const descriptionParagraph = this.parentElement.querySelector('.description-paragraph');
+    
+    // Toggle the visibility
+    if (descriptionParagraph.style.display === "none" || descriptionParagraph.style.display === "") {
+      descriptionParagraph.style.display = "block";
+    } else {
+      descriptionParagraph.style.display = "none";
+    }
+  });
+});
 
 
