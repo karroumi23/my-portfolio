@@ -473,7 +473,7 @@ header.sticky{
 .projects-content{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px,auto));
-  align-items: center;
+  /* align-items: center; */
   gap: 2.3rem;
   margin-top: 4.2rem;
 }
@@ -484,6 +484,7 @@ header.sticky{
   box-shadow: 0 0 5px #13bbff;
   padding: 20px;
   transition: all .50s ease;
+  height: fit-content;
 }
 
 
