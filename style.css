@@ -15,8 +15,6 @@
 
 /*  -------------------------Start header */
 header {
-  /* background-color: #C2C2C2; */
-  /* background-color: #1B1F24; */
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -410,6 +408,14 @@ header.sticky{
   gap: 1rem;
   margin-top: 40px;
 }
+@media (max-width: 1000px){
+  .box-content{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align:center ;
+  }
+} 
+
 .about-img img{
    width: 100%;
    height: 430px;
@@ -420,16 +426,37 @@ header.sticky{
    border: 3px solid var(--blue);
    box-shadow:  0 0 20px var(--blue);
 }
+/* phones */
+@media (max-width: 739px){
+  .about-img img{
+    width: 100%;
+    height: 300px;
+    max-width: 330px;
+  }
+}
 .about-text h2{
   color: #fff;
   font-size: 2rem;
   line-height: 1.3;
   margin-bottom: 15px;
 }
+
 .about-text h2 span{
   color: var(--blue);
 }
-
+/* phones */
+@media (max-width: 739px){
+  .about-text h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+  .about-text h2 span{
+     font-weight: 800;
+     font-size:1.7rem;
+  }
+}
 .about-paragraph p {
   text-align: center;
   border: 1px solid var(--blue); 
@@ -453,6 +480,7 @@ header.sticky{
 .exp-area{
   margin-bottom: 30px;
 }
+
 .exp-area p{
   color: #fff;
   font-weight: 600;
@@ -464,6 +492,13 @@ header.sticky{
   font-size:1rem ;
   font-weight: 400;
   margin-left: 8px;
+}
+/* phones */
+@media (max-width: 739px){
+  .exp-area #email span{
+    font-size: .90rem;
+    
+  }
 }
 
 /*  -------------------------END ABOUT-section */
@@ -622,3 +657,44 @@ header.sticky{
     }
   }
 /* ---------------------------END-contact */
+/* ---------------------------START-FOOTER  */
+  .footer{
+    padding:22px 26%;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .copyright p{
+     font-size: 15px;
+     font-weight: 400;
+     color: #c3cad5;
+  }
+  .copyright span{
+    color: var(--blue);
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .scroll-top i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #075fe4;
+    width:30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  /* phones */
+@media (max-width: 739px){
+  .footer{
+    padding:22px 10%;
+  }
+
+  .footer .social-icons{
+    display: none;
+  }
+}
+/* ---------------------------END-FOOTER */
