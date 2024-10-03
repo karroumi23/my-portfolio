@@ -33,11 +33,12 @@ descriptionBtn.forEach(button => {
     const descriptionParagraph = this.parentElement.querySelector('.description-paragraph');
     
     // Toggle the visibility
-    if (descriptionParagraph.style.display === "none" || descriptionParagraph.style.display === "") {
-      descriptionParagraph.style.display = "block";
-    } else {
-      descriptionParagraph.style.display = "none";
-    }
+    descriptionParagraph.classList.toggle('show');
+    // if (descriptionParagraph.style.display === "none" || descriptionParagraph.style.display === "") {
+    //   descriptionParagraph.style.display = "block";
+    // } else {
+    //   descriptionParagraph.style.display = "none";
+    // }
   });
 });
 

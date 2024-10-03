@@ -486,7 +486,7 @@ header.sticky{
   border: 1px solid transparent;
   box-shadow: 0 0 5px #13bbff;
   padding: 20px;
-  transition: all .50s ease;
+  transition: all 0.70s ease;
 }
 
 
@@ -548,11 +548,20 @@ header.sticky{
   border: none;
   cursor: pointer;
 }
+
 .projects-content .description-paragraph{
-  display: none;
   color:#c3cad5 ;
   font-size:1rem ;
   font-weight: 300;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+/* active by JS */
+.description-paragraph.show {
+  max-height: 200px; /* or whatever the max height needed */
+  opacity: 1;
 }
 
 /* ---------------------------END-projects */
