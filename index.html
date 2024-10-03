@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
+            awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
+   <!-- aos-animation -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
     <title>PORTFOLIO</title>
@@ -36,7 +39,7 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
   <!-- ------------------END-header -->
   <!-- ------------------start-title-section -->
      <section class="main" id="home">
-      <div>
+      <div data-aos="fade-in">
          <h2>Hello, I'm Anass <br><span>Web Developer</span></h2>
          <h3>Building websites with seamless functionality </h3>
          <div class="box-btn">
@@ -58,24 +61,27 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
   <!-- ------------------END-title-section -->
   <!-- ------------------start ABOUT-section -->
       <section class="about" id="about">
-        <h1 class="title"><a href="#about" class="link" >ABOUT ME</a></h1>
+        <div class="box-title" data-aos="fade-down">
+           <h1 class="title"><a href="#about" class="link" >ABOUT ME</a></h1>
+        </div>
+        
 
         <div class="box-content">
 
-           <div class="about-img">
+           <div class="about-img" data-aos="zoom-in-down">
                <img src="/image/my photo.png" alt="">
            </div>
-        <div class="about-text">
-            <h2>
+           <div class="about-text" data-aos="zoom-in-up">
+             <h2>
                I am <span>Karroumi Anass</span> <br>Web Developer Full Stack
-            </h2>
+             </h2>
 
-            <div class="about-paragraph">
+             <div class="about-paragraph">
               <p>
                 I'm a Junior Developer passionate about coding and eager to learn and grow. I have a solid foundation in various programming languages and technologies and always want to expand my skills and knowledge.
 
               </p>
-            </div>
+             </div>
 
 
             <div class="exp-area">
@@ -109,8 +115,11 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
   <!-- ------------------END ABOUT-section -->
   <!----- ------------------START-projects -->
    <section class="projects" id="projects">
+        <div class="box-title" data-aos="fade-down">
           <h1 class="title"><a href="#about" class="link" >PROJECTS</a></h1>
-    <div class="projects-content">
+        </div>
+          
+    <div class="projects-content" data-aos="zoom-in-up">
 
              <div class="row">
                <img src="/image/travel-agency 1.png" >
@@ -253,8 +262,11 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
   <!-- ------------------END-projects ----->
    <!----- ------------------START-contact -->
      <section class="contact" id="contact">
-       <h1 class="title"><a href="#about" class="link" >CONTACT ME </a></h1>
-       <div class="contact-form">
+      <div class="box-title" data-aos="fade-down">
+          <h1 class="title"><a href="#about" class="link" >CONTACT ME </a></h1>
+      </div>
+       
+       <div class="contact-form"  data-aos="zoom-in">
          <form action="">
             <input type="text" placeholder="Your name" required>
             <input type="text" placeholder="Email Address.." required>
@@ -287,5 +299,13 @@ awesome/6.6.0/css/all.min.css"><link rel="stylesheet" href="/style.css">
 
   
 <script src="main.js"></script>
+<!-- aos-animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+           offset:300,
+           duration: 1400,
+    });
+  </script>
 </body>
 </html>
