@@ -267,10 +267,11 @@
       </div>
        
        <div class="contact-form"  data-aos="zoom-in">
-         <form action="">
-            <input type="text" placeholder="Your name" required>
-            <input type="text" placeholder="Email Address.." required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                  <!-- link from (formsubmit.co)to get the messages -->
+         <form action="https://formsubmit.co/af44f9cf803a0739a834d9dcf6a1bb3c" method="POST">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="text" name="Email" placeholder="Email Address.." required>
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
             <input type="submit" class="send-btn" name="" value="Send Message">
          </form>
          
@@ -303,7 +304,7 @@
   <script>
     AOS.init({
            offset:300,
-           duration: 1400,
+           duration: 1300,
     });
   </script>
 </body>
