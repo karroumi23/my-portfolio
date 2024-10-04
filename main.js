@@ -41,5 +41,3 @@ descriptionBtn.forEach(button => {
     // }
   });
 });
-
-
