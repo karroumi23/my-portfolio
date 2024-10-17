@@ -622,8 +622,9 @@ header.sticky{
   margin-bottom: 2rem;
   font-size:2rem ;
   text-align: center;
-  color: #075fe4;
+  color: #c4b5ea;
 }
+/* ****left-skills */
 .skill-left .skill-bar .info{
   display: flex;
   justify-content: space-between;
@@ -677,10 +678,71 @@ header.sticky{
   width: 70%;
 }
 
+/******* right-skills */
+.Professional{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box{
+  position: relative;
+   margin: 10px 0;
+   flex: 1 1 15px;
+}
+.box .text{
+  color: #fff;
+  text-align: center;
+  font-size:1rem;
+}
+.box .text big{
+  font:400;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.box .text small{
+  display: block;
+  font-weight: 600;
+
+}
+.circle{
+  width: 100%;
+  height: 120px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+}
+.circle .points{
+   width: 5px;
+   height: 10px;
+   background-color: var(--bg-color);
+   position: absolute;
+   border-radius:3px;
+   transform: rotate(calc(var(--i)*120deg)) translateY(-45px);
+   animation: glow 0.04s linear forwards;
+   animation-delay: calc(var(--i)*0.05s);
+   
+}
 
 
 
 
+
+/* keyframs********************* */
+
+@keyframes glow{
+   0%{
+    background-color: var(--bg-color);
+    box-shadow: none;
+   }
+   100%{
+    background-color: #075fe4;
+    box-shadow:  0 0 15px var(--blue);
+
+   }
+}
 
 
 
