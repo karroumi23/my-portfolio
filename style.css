@@ -616,7 +616,7 @@ header.sticky{
   gap: 1rem;
 }
 .skill-bar{
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .skill-main h3{
   margin-bottom: 2rem;
@@ -679,75 +679,77 @@ header.sticky{
 }
 
 /******* right-skills */
-.Professional{
+.Professional {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-left: 10%;
+  margin-top: 13%;
 }
-.box{
+
+.box {
   position: relative;
-   margin: 10px 0;
-   flex: 1 1 15px;
+  margin: 10px 0;
+  flex: 1 1 15px;
 }
-.box .text{
+
+.box .text {
   color: #fff;
   text-align: center;
-  font-size:1rem;
+  font-size: 1rem;
 }
-.box .text big{
-  font:400;
+
+.box .text big {
+  font-weight: 400;
   letter-spacing: 1px;
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50% , -50%);
+  margin-left: 10px;
+  transform: translate(-50%, -50%);
 }
-.box .text small{
+
+.box .text small {
   display: block;
   font-weight: 600;
-
+  margin-top: 10px;
 }
-.circle{
-  width: 100%;
-  height: 120px ;
+
+.circle {
+  width: 100px; 
+  height: 100px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #fff;
-}
-.circle .points{
-   width: 5px;
-   height: 10px;
-   background-color: var(--bg-color);
-   position: absolute;
-   border-radius:3px;
-   transform: rotate(calc(var(--i)*120deg)) translateY(-45px);
-   animation: glow 0.04s linear forwards;
-   animation-delay: calc(var(--i)*0.05s);
-   
+  
+  border-radius: 50%; 
+  position: relative;
 }
 
+.circle .points {
+  width: 5px;
+  height: 10px;
+  background-color: var(--bg-color); 
+  border-radius: 3px;
+  transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+.points.marked {
+  background-color: var(--bg-color); 
+  animation: glow 0.04s linear forwards;
+  animation-delay: calc(var(--i) * 0.05s);
+}
 
 
-
-
-/* keyframs********************* */
-
-@keyframes glow{
-   0%{
+@keyframes glow {
+  0% {
     background-color: var(--bg-color);
     box-shadow: none;
-   }
-   100%{
+  }
+  100% {
     background-color: #075fe4;
-    box-shadow:  0 0 15px var(--blue);
-
-   }
+    box-shadow: 0 0 15px #075fe4;
+  }
 }
-
-
-
-
-
 
 
 /* ---------------------------start-contact */

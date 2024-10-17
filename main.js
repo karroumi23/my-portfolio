@@ -24,16 +24,18 @@ window.addEventListener("scroll", function () {
 // create function to display and hiding description paragraph
 
 // Select all toggle buttons
-const descriptionBtn = document.querySelectorAll('.description-btn');
+const descriptionBtn = document.querySelectorAll(".description-btn");
 
 // Add click event listener to each button
-descriptionBtn.forEach(button => {
-  button.addEventListener('click', function() {
+descriptionBtn.forEach((button) => {
+  button.addEventListener("click", function () {
     // Get the associated description element in the same card
-    const descriptionParagraph = this.parentElement.querySelector('.description-paragraph');
-    
+    const descriptionParagraph = this.parentElement.querySelector(
+      ".description-paragraph"
+    );
+
     // Toggle the visibility
-    descriptionParagraph.classList.toggle('show');
+    descriptionParagraph.classList.toggle("show");
     // if (descriptionParagraph.style.display === "none" || descriptionParagraph.style.display === "") {
     //   descriptionParagraph.style.display = "block";
     // } else {
@@ -41,3 +43,22 @@ descriptionBtn.forEach(button => {
     // }
   });
 });
+
+// create circles for left-skills
+const circles = document.querySelectorAll(".circle");
+
+circles.forEach(elem => {
+  var dots = elem.getAttribute("data-dots");
+  var marked = elem.getAttribute("data-percent");
+  var percent = Math.floor(dots * marked / 100); // Calculate the number of marked points
+  var points = "";
+  var rotate = 360 / dots; // Rotation for each point
+
+  for (let i = 0; i < dots; i++) {
+    let isMarked = i < percent ? 'marked' : ''; // Mark the appropriate points
+    points += `<div class="points ${isMarked}" style="--i:${i}; --rot:${rotate}deg"></div>`;
+  }
+
+  elem.innerHTML = points;
+});
+
