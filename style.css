@@ -600,10 +600,98 @@ header.sticky{
 }
 
 /* ---------------------------END-projects */
+
+/* ---------------------------START-SKILLS */
+
+
+/* ---------------------------END-SKILLS */
+.skills{
+  background: var(--second-bg-color);
+  padding:60px 10% 50px;
+}
+.skill-main{
+  width: 100%;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+.skill-bar{
+  margin-bottom: 1.5rem;
+}
+.skill-main h3{
+  margin-bottom: 2rem;
+  font-size:2rem ;
+  text-align: center;
+  color: #075fe4;
+}
+.skill-left .skill-bar .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.skill-left .info p{
+  color: #fff;
+}
+
+.skill-left .skill-bar .bar{
+  width: 100%;
+  height: 10px;
+  background-color: var(--bg-color);
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+.skill-bar .bar span{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: #075fe4;
+  box-shadow:  0 0 15px var(--blue);
+
+  border-radius: 25px;
+}
+ .skill-bar .bar .html{
+   width: 82%;
+ }
+ .skill-bar .bar .javascript{
+  width: 70%;
+}
+.skill-bar .bar .css{
+  width: 85%;
+}
+.skill-bar .bar .github{
+  width: 70%;
+}
+.skill-bar .bar .git{
+  width: 60%;
+}
+.skill-bar .bar .wordpress{
+  width: 72%;
+}
+.skill-bar .bar .mysql{
+  width: 52%;
+}
+.skill-bar .bar .bootstrap{
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------------start-contact */
   .contact{
     padding:60px 10% 50px;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
   }
 
   .contact-form{
