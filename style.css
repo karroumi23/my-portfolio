@@ -603,8 +603,6 @@ header.sticky{
 
 /* ---------------------------START-SKILLS */
 
-
-/* ---------------------------END-SKILLS */
 .skills{
   background: var(--second-bg-color);
   padding:60px 10% 50px;
@@ -661,14 +659,14 @@ header.sticky{
 
   border-radius: 25px;
 }
- .skill-bar .bar .html{
+ .skill-bar .bar .php{
    width: 82%;
  }
  .skill-bar .bar .javascript{
   width: 70%;
 }
-.skill-bar .bar .css{
-  width: 85%;
+.skill-bar .bar .laravel{
+  width: 50%;
 }
 .skill-bar .bar .github{
   width: 70%;
@@ -683,7 +681,7 @@ header.sticky{
   width: 52%;
 }
 .skill-bar .bar .bootstrap{
-  width: 70%;
+  width: 80%;
 }
 
 /******* right-skills */
@@ -759,7 +757,7 @@ header.sticky{
     box-shadow: 0 0 15px #075fe4;
   }
 }
-
+/* ---------------------------END-SKILLS */
 
 
 
