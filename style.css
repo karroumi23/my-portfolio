@@ -423,8 +423,8 @@ header.sticky{
    background: var(--bg-color);
    border-radius: 50%;
    object-fit: cover;
-   border: 3px solid var(--blue);
-   box-shadow:  0 0 20px var(--blue);
+   border: 1px solid var(--blue);
+   box-shadow:  0 0 12px var(--blue);
 }
 /* phones */
 @media (max-width: 739px){
@@ -597,6 +597,59 @@ header.sticky{
 .description-paragraph.show {
   max-height: 200px; /* or whatever the max height needed */
   opacity: 1;
+}
+
+
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.lightbox-controls .prev,
+.lightbox-controls .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.lightbox-controls .prev { left: 10px; }
+.lightbox-controls .next { right: 10px; }
+
+.lightbox-controls .prev:hover,
+.lightbox-controls .next:hover,
+.lightbox .close:hover {
+  color: #13bbff;
 }
 
 /* ---------------------------END-projects */

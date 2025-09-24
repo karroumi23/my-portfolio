@@ -62,3 +62,54 @@ circles.forEach(elem => {
   elem.innerHTML = points;
 });
 
+
+
+
+// lightbox to show img project slider 
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.querySelector('.lightbox-img');
+const closeBtn = document.querySelector('.lightbox .close');
+const prevBtn = document.querySelector('.lightbox .prev');
+const nextBtn = document.querySelector('.lightbox .next');
+
+let images = [];
+let currentIndex = 0;
+
+// Open lightbox
+document.querySelectorAll('.project-img').forEach(img => {
+  img.addEventListener('click', () => {
+    images = img.dataset.images.split(',');
+    currentIndex = 0;
+    openLightbox(images[currentIndex]);
+  });
+});
+
+function openLightbox(src) {
+  lightbox.style.display = 'block';
+  lightboxImg.src = src;
+}
+
+// Close
+closeBtn.onclick = () => {
+  lightbox.style.display = 'none';
+};
+
+// Next/Prev
+nextBtn.onclick = () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  lightboxImg.src = images[currentIndex];
+};
+
+prevBtn.onclick = () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  lightboxImg.src = images[currentIndex];
+};
+
+// Close on outside click
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
+  }
+});
+
+
