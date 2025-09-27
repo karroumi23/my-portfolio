@@ -596,7 +596,7 @@ header.sticky{
 }
 /* active by JS */
 .description-paragraph.show {
-  max-height: 700px; /* or whatever the max height needed */
+  max-height: 900px; /* or whatever the max height needed */
   opacity: 1;
 }
 
