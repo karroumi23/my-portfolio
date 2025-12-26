@@ -457,7 +457,7 @@ header.sticky{
      font-size:1.7rem;
   }
 }
-.about-paragraph p {
+/* .about-paragraph p {
   text-align: center;
   border: 1px solid var(--blue); 
   padding: 9px 13px;                
@@ -469,7 +469,34 @@ header.sticky{
   max-width: 800px;              
   border-radius: 10px;          
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+} */
+
+.about-paragraph {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  padding: 25px 30px;
+  background: linear-gradient(
+    135deg,
+    var(--second-bg-color),
+    rgba(0, 0, 0, 0.85)
+  );
+  border: 1px solid var(--blue);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
+
+.about-paragraph p {
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #f1f1f1;
+  margin-bottom: 15px;
+}
+
+.about-paragraph p:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .about-paragraph p {
     font-size: 0.9rem;           
