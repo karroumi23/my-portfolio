@@ -527,8 +527,9 @@ ul { list-style: none; }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    align-items: start;
 }
 
 .project-card {
@@ -539,6 +540,7 @@ ul { list-style: none; }
   transition: transform var(--transition), box-shadow var(--transition);
   display: flex;
   flex-direction: column;
+  min-height: 420px;
 }
 .project-card:hover {
   transform: translateY(-4px);
@@ -580,13 +582,14 @@ ul { list-style: none; }
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
 }
 
 .project-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .project-meta h4 {
   font-family: var(--font-display);
@@ -615,6 +618,7 @@ ul { list-style: none; }
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 .project-stack span {
   padding: 3px 9px;
@@ -625,11 +629,61 @@ ul { list-style: none; }
   color: var(--accent);
 }
 
+.desc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  color: var(--text-muted);
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all var(--transition);
+  margin-top: auto;
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+.desc-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+.desc-btn i {
+  font-size: 0.7rem;
+  transition: transform var(--transition);
+}
+.desc-btn.open i {
+  transform: rotate(180deg);
+}
+
 .project-desc {
   font-size: 0.875rem;
   color: var(--text-muted);
   line-height: 1.7;
-  flex: 1;
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+  transition:
+    max-height .35s ease,
+    opacity .25s ease,
+    margin-top .25s ease;
+  
+}
+.project-desc.show {
+  max-height: 250px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ── SKILLS ──────────────────────────────── */

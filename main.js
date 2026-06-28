@@ -69,6 +69,37 @@ document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', closeMobileNav);
 });
 
+// ── Project Description Accordion ─────────────────────
+const descButtons = document.querySelectorAll('.desc-btn');
+
+descButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    const currentDesc = btn.nextElementSibling;
+    const isOpen = currentDesc.classList.contains('show');
+
+    // Close every card first
+    descButtons.forEach(otherBtn => {
+      otherBtn.classList.remove('open');
+      otherBtn.innerHTML =
+        '<i class="fa-solid fa-chevron-down"></i> Description';
+
+      const otherDesc = otherBtn.nextElementSibling;
+      otherDesc.classList.remove('show');
+    });
+
+    // If it wasn't open, open it
+    if (!isOpen) {
+      currentDesc.classList.add('show');
+      btn.classList.add('open');
+      btn.innerHTML =
+        '<i class="fa-solid fa-chevron-up"></i> Hide';
+    }
+  });
+});
+
+
+
 // ── Lightbox ──────────────────────────────
 const lightbox = document.getElementById('lightbox');
 const lbImg    = document.getElementById('lbImg');
@@ -155,7 +186,7 @@ const fadeObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.project-card, .tech-card, .soft-card, .about-grid, .contact-grid').forEach(el => {
+document.querySelectorAll('.tech-card, .soft-card, .about-grid, .contact-grid').forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(20px)';
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
