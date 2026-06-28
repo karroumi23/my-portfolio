@@ -1,450 +1,452 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="/style.css">
-   <!-- aos-animation -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-
-    <title>PORTFOLIO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karroumi Anass — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ------------------start-header -->
-   <header>
-     <!-- start sidebar -->
-     <div class="fas fa-bars" id="menu-icon" onclick="showMenu()"></div>
-       <div class="slide" id="slide-bar" >
-        <h1>MENU</h1>
-        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="#about"><i class="fa-solid fa-address-card"></i> About</a>
-        <a href="#projects"><i class="fa-solid fa-globe"></i> Projects</a>
-        <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-        <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>             
-       </div>
-     <!-- start sidebar -->
 
-
-     <a href="#" class="logo">Karroumi</a>
-     <nav class="navigation">
-         <a href="#home">Home</a>
-         <a href="#about">About</a>
-         <a href="#projects">Projects</a>
-         <a href="#skills">Skills</a>
-         <a href="#contact">Contact</a>
-     </nav>
-   </header>
-
-  <!-- ------------------END-header -->
-  <!-- ------------------start-title-section -->
-     <section class="main" id="home">
-      <div data-aos="fade-in">
-         <h2>Hello, I'm Anass <br><span>Web Developer</span></h2>
-         <h3>Building websites with seamless functionality </h3>
-         <div class="box-btn">
-              <a href="#projects" class="main-btn">View my work</a>
-              <a href="CV développement.pdf" download class="main-btn btn--download" >Download CV</a>
-         </div>
-         
-         <div class="social-icons">
-           <a href="https://www.linkedin.com/in/karroumi-anass-a241b2173/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-           <a href="https://github.com/karroumi23"  target="_blank"><i class="fa-brands fa-github"></i></a>
-           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anasskarroumi2016@gmail.com" target="_blank">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-                     
-         </div>
-      </div>
-        <div class="myimg">
-          <img src="/image/my photo.png" alt="">
-        </div>
-     </section>
-  <!-- ------------------END-title-section -->
-  <!-- ------------------start ABOUT-section -->
-      <section class="about" id="about">
-        <div class="box-title" data-aos="fade-down">
-           <h1 class="title"><a href="#about" class="link" >ABOUT ME</a></h1>
-        </div>
-        
-
-        <div class="box-content">
-
-           <div class="about-img" data-aos="zoom-in-down">
-               <img src="/image/my photo 1.jpg" alt="">
-           </div>
-           <div class="about-text" data-aos="zoom-in-up">
-             <h2>
-               I am <span>Karroumi Anass</span> <br>Web Developer Full Stack
-             </h2>
-
-             <div class="about-paragraph">
-                  <p>
-                    Junior Full Stack Developer with a Professional Bachelor’s Degree in Software Engineering (2025),
-                    passionate about web development and modern technologies.
-                  </p>
-                
-                  <p>
-                    I build practical, secure, and performant web applications with a strong focus on clean code,
-                    business logic, and user experience.
-                  </p>
-                
-                  <p>
-                    Curious, self-motivated, and solution-oriented, I continuously improve my skills in Laravel and React
-                    while applying best practices in web development.
-                  </p>
-             </div>
-
-
-            <div class="exp-area">
-               <p class="exp">
-                 experience :
-                 <span>2 years</span>
-               </p>
-               <p class="exp">
-                Specialty :
-                <span>Developer</span>
-              </p>
-              <p class="exp">
-                Address :
-                <span>Casablanca, morocco</span>
-              </p>
-              <p class="exp" id="email">
-                Email :
-                <span>anasskarroumi2016@gmail.com</span>
-              </p>
-              <p class="exp">
-                Phone :
-                <span>+212616548858</span>
-              </p>             
-            </div>
-            <a href="#projects" class="main-btn">View my work</a>
-        </div>
-        </div>
-       
-      </section>
-
-  <!-- ------------------END ABOUT-section -->
-  <!----- ------------------START-projects -->
-   <section class="projects" id="projects">
-        <div class="box-title" data-aos="fade-down">
-          <h1 class="title"><a href="#projects" class="link" >PROJECTS</a></h1>
-        </div>
-          
-    <div class="projects-content" data-aos="zoom-in-up">
-        <!-- Cabinet Medical -->
-            <div class="row">
-               <img src="/image/cabinet-home 1.jpg" style="height: 220px;" class="project-img"
-                    data-images="/image/cabinet-conception_DB 7.jpg,/image/cabinet-home 1.jpg,/image/cabinet-liste-p 2.jpg,
-                                 /image/cabinet-D_medical 3.jpg,/image/cabinet-ajouter_p 4.jpg,
-                                 /image/cabinet-ajouter_u 5.jpg,/image/cabinet-auth 6.jpg,"                             
-               >  
-               <div class="main-row">
-                  <div class="row-text">
-                    <h5>Cabinet Medical</h5>
-                  </div>
-                  <div class="row-icon">
-                     <a href="https://github.com/karroumi23/Travel-agency-1.git"target="_blank"> <i class="fa-brands fa-github"></i></a>
-                  </div>                
-               </div>     
-               <button class="description-btn" id="descriptionBtn">Description</button>
-               <p class="description-paragraph" id="descriptionParagraph">
-                🏥 A PHP MVC web application for managing patients, medical records (dossier médical), and users in a hospital or medical office. The system includes authentication with different roles (Administrateur and Super Administrateur), allowing secure access and role management (add, edit, or change roles and passwords).
-                Each patient can have multiple medical records (dossiers médicaux), which can be exported individually or as a list of patients in PDF format. The app also supports search and filtering by patient name, enabling quick access to records.
-                Additional features include PDF export, role-based access control, and auto-setup with fake data to simplify testing and deployment.
-               </p>       
-            </div>  
-        <!-- Product Management -->
-            <div class="row">
-              <img src="/image/crud-home_form 1 .jpg"  style="height: 220px;" class="project-img"  
-                   data-images="/image/crud-home_form 1 .jpg,/image/crud-liste 2 .jpg,
-                   /image/crud-filter_by_title 3.jpg,/image/crud-filter_by_categorie  4.jpg,"
-               >
-            
-              <div class="main-row">
-               <div class="row-text">
-                  <h5>Product Management</h5>
-               </div>
-               <div class="row-icon">
-                 <a href="https://product-management-system-crud.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
-                 <a href="https://github.com/karroumi23/CRUD-Product-Management-System.git" target="_blank"> <i class="fa-brands fa-github"></i></a>
-               </div>  
-             </div>  
-             <button class="description-btn" id="descriptionBtn" >Description</button>
-             <p class="description-paragraph" id="descriptionParagraph">
-                This project is a fully functional Product Management System that 
-                allows users to manage product data efficiently through basic CRUD
-                (Create, Read, Update, Delete) operations. Built with vanilla JavaScript,
-                HTML, and CSS, the system features a user-friendly interface,
-             </p>
-            </div>  
-
-        <!-- Facture En Ligne -->
-           <div class="row">
-              <img src="/image/facture home 1.jpg"  style="height: 220px;" class="project-img"
-                   data-images="/image/facture home 1.jpg,
-                                /image/facture pfd button .jpg,
-                                /image/facture logo & num facture 2 .jpg,
-                                /image/facture info cliant&company 3.jpg,
-                                /image/facture tables  Counting & the dates  4.jpg,
-                                /image/facture  Devis-table  5.jpg,
-                                /image/facture example logo info 6.jpg,
-                                /image/facture example 2   7.jpg"
-              > 
-             
-                <div class="main-row">
-                    <div class="row-text">
-                          <h5>Facture En Ligne</h5>
-                    </div>
-                    <div class="row-icon">
-                        <a href="https://facture-enligne-1.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
-                        <a href="https://github.com/karroumi23/facture-en-ligne-1.git" target="_blank"> <i class="fa-brands fa-github"></i></a>
-                    </div>  
-                </div>  
-                <button class="description-btn" id="descriptionBtn" >Description</button>
-                <p class="description-paragraph" id="descriptionParagraph">
-                  Facture-en-Ligne – Web-Based Invoicing Application
-                  A web-based invoicing tool built with HTML, CSS, and JavaScript that enables freelancers and businesses to generate professional invoices quickly with customizable options.
-                  <br>
-
-                  Key Features:    <br>              
-                  🖼️ Custom branding with company logo                 
-                  🧾 Auto-generate and manage invoice numbers        
-                  🏢 Manage company & client details (SIRET, TVA, contacts, addresses)                 
-                  ➕➖ Dynamic fields for client info and products/services                  
-                  📅 Smart date auto-fill (invoice, delivery, payment)                  
-                  📊 Invoice table with unlimited rows                 
-                  🔄 Auto-calculations (HT, TVA 20%, TTC)                 
-                  📤 Export invoices as PDF                  
-                  ✅ Clean, user-friendly interface                  
-                  Stack: HTML, CSS, JavaScript (Vanilla JS, DOM manipulation)
-                </p>
-           </div>  
-        <!-- Travel Agency -->
-           <div class="row">
-                <img src="/image/travel-agency 1.png" >
-                <div class="main-row">
-                  <div class="row-text">
-                      <h5>Travel Agency</h5>
-                  </div>
-                  <div class="row-icon">
-                      <a href="https://travel-agency-0.netlify.app/" target="_blank"><i class="fa-solid fa-display"></i></a>
-                      <a href="https://github.com/karroumi23/Travel-agency-1.git"target="_blank"> <i class="fa-brands fa-github"></i></a>
-                  </div>                
-                </div>     
-                <button class="description-btn" id="descriptionBtn">Description</button>
-                <p class="description-paragraph" id="descriptionParagraph">
-                  This project is a fully responsive and interactive
-                    travel agency website built using JavaScript, HTML,
-                    and CSS. The website is designed to offer a seamless
-                      user experience with a modern and clean design.
-                </p>       
-           </div>  
-        
-
-       
-    </div>
-        
-   </section>
-  <!-- ------------------END-projects ----->
-  <!-- ------------------START-SKILLS ----->
-  <section class="skills" id="skills" >
-      <div class="box-title" id="skills" data-aos="fade-down">
-         <h1 class="title"><a href="#skills" class="link" >SKILLS</a></h1>
-      </div>
-      <div class="skill-main">
-        <!-- ***********left-skills -->
-         <div class="skill-left" data-aos="zoom-in-down">
-            <h3>Technical Skills</h3>
-
-            <div class="skill-bar">
-               <div class="info">
-                 <p>PHP</p>
-                 <p>82%</p>
-               </div>
-               <div class="bar">
-                 <span class="php"></span>
-               </div>
-            </div>
-
-            <div class="skill-bar">
-              <div class="info">
-                <p>JavaScript</p>
-                <p>70%</p>
-              </div>
-              <div class="bar">
-                <span class="javascript"></span>
-              </div>
-           </div>
-
-           <div class="skill-bar">
-            <div class="info">
-              <p>LARAVEL</p>
-              <p>50%</p>
-            </div>
-            <div class="bar">
-              <span class="laravel"></span>
-            </div>
-         </div>
-
-         <div class="skill-bar">
-          <div class="info">
-             <p>Bootstrap</p>
-             <p>80%</p>
-          </div> 
-          <div class="bar">
-            <span class="bootstrap"></span>
-          </div>
-       </div>
-
-         <div class="skill-bar">
-          <div class="info">
-            <p>GitHub</p>
-            <p>70%</p>
-          </div>
-          <div class="bar">
-            <span class="github"></span>
-          </div>
-       </div>
-
-       <div class="skill-bar">
-        <div class="info">
-          <p>Git</p>
-          <p>60%</p>
-        </div>
-        <div class="bar">
-          <span class="git"></span>
-        </div>
-     </div>
-
-     <div class="skill-bar">
-       <div class="info">
-         <p>Wordpress</p>
-         <p>72%</p>
-       </div>
-       <div class="bar">
-         <span class="wordpress"></span>
-       </div>
-     </div>
-
-        <div class="skill-bar">
-           <div class="info">
-              <p>MySql</p>
-              <p>52%</p>
-           </div>
-           <div class="bar">
-             <span class="mysql"></span>
-           </div>
-        </div>
-
-
-      </div>
-      <!-- ***********right-skills -->
-      <div class="skill-right" data-aos="zoom-in-up">
-           <h3>Professional Skills</h3>
-           <div class="Professional">
-
-              <div class="box">
-                  <div class="circle" data-dots="80" data-percent="85"></div>
-                  <div class="text">
-                      <big>85%</big>
-                      <small>Team Collaboration</small>
-                  </div>
-              </div>
-
-              <div class="box">
-                <div class="circle" data-dots="80" data-percent="80"></div>
-                <div class="text">
-                    <big>80%</big>
-                    <small>Communication</small>
-                </div>
-              </div>
-              <div class="box">
-                <div class="circle" data-dots="80" data-percent="70"></div>
-                <div class="text">
-                    <big>70%</big>
-                    <small>Problem-Solving</small>
-                </div>
-              </div>
-              <div class="box">
-                <div class="circle" data-dots="80" data-percent="90"></div>
-                <div class="text">
-                    <big>90%</big>
-                    <small>Adaptability</small>
-                </div>
-              </div>
-
-            
-           </div>
-      </div>
-      </div>
-  </section>
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <a href="#home" class="logo">
+      <img src="image/logo-dark.png"  id="logoDark"  class="logo-img" alt="Karroumi Anass" />
+      <img src="image/logo-light.png" id="logoLight" class="logo-img" alt="Karroumi Anass" />
+    </a>
     
-  <!-- ------------------END-SKILLS ----->
-     
-  <!----- ------------------START-contact -->
-     <section class="contact" id="contact">
-      <div class="box-title" data-aos="fade-down">
-          <h1 class="title"><a href="#contact" class="link" >CONTACT ME </a></h1>
-      </div>
-       
-       <div class="contact-form"  data-aos="zoom-in">
-                  <!-- link from (https://formspree.io/)to get the messages -->
-         <form action="https://formspree.io/f/meoqjedk" method="POST">
-            <input type="text" name="Name" placeholder="Your name" required>
-            <input type="email" name="Email" placeholder="Email Address.." required>
-            <textarea name="Message" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
-            <input type="submit" class="send-btn" name="" value="Send Message">
-         </form>
-         
-       </div>
-     </section>
-   <!----- ------------------END-contact -->
-   <!----- ----------------START-FOOTER -->
-      <div class="footer">
-         <div class="copyright">
-            <p>2024 <span>Karroumi</span> Anass, All Rights Reserved</p>
-         </div>
 
-         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/karroumi-anass-a241b2173/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/karroumi23"  target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="mailto:anasskarroumi2016@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose"><i class="fa-solid fa-xmark"></i></button>
+    <a href="#home" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#about" class="mobile-link"><i class="fa-solid fa-address-card"></i> About</a>
+    <a href="#projects" class="mobile-link"><i class="fa-solid fa-globe"></i> Projects</a>
+    <a href="#skills" class="mobile-link"><i class="fas fa-code"></i> Skills</a>
+    <a href="#contact" class="mobile-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ===== HOME ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Available for work</p>
+      <h1 class="hero-title">Hi, I'm <span>Anass</span><br/>Full Stack Developer</h1>
+      <p class="hero-sub">Building clean, performant web apps with PHP, Laravel & React.js</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="CV développement.pdf" download class="btn btn-outline">Download CV <i class="fa-solid fa-download"></i></a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/karroumi-anass-a241b2173/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/karroumi23" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:anasskarroumi2016@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <div class="hero-img-glow"></div>
+        <img src="/image/my photo.png" alt="Karroumi Anass" class="hero-photo" />
+        <div class="hero-pill hero-pill--tl">
+          <span class="badge-dot"></span> Available for work
+        </div>
+        <div class="hero-pill hero-pill--br">
+          <i class="fa-brands fa-laravel"></i> Laravel &amp; React
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="section-header">
+      <span class="section-tag">Who I am</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src="/image/about-img-1.png" alt="Karroumi Anass" />
+        <div class="about-img-badge"><i class="fa-solid fa-code"></i> 2 Years Exp.</div>
+      </div>
+
+      <div class="about-info">
+        <h3 class="about-name">Karroumi <span>Anass</span></h3>
+        <p class="about-role">Junior Full Stack Web Developer</p>
+
+        <p class="about-desc">
+          Passionate Full Stack Developer with a Professional Bachelor's in Software Engineering (2025).
+          I craft secure, performant web applications with clean architecture and outstanding user experience.
+          Continuously levelling up in Laravel and React while applying modern best practices.
+        </p>
+
+        <ul class="about-details">
+          <li><i class="fa-solid fa-briefcase"></i><span>Experience</span><strong>2 Years</strong></li>
+          <li><i class="fa-solid fa-star"></i><span>Specialty</span><strong>Junior Full Stack | PHP · Laravel · React.js</strong></li>
+          <li><i class="fa-solid fa-location-dot"></i><span>Location</span><strong>Casablanca, Morocco</strong></li>
+          <li><i class="fa-solid fa-envelope"></i><span>Email</span><strong><a href="mailto:anasskarroumi2016@gmail.com">anasskarroumi2016@gmail.com</a></strong></li>
+          <li><i class="fa-solid fa-phone"></i><span>Phone</span><strong>+212 616 548 858</strong></li>
+        </ul>
+
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="section-header">
+      <span class="section-tag">What I've built</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Cabinet Medical -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="/image/cabinet-home 1.jpg" alt="Cabinet Medical"
+            class="project-thumb"
+            data-images="/image/cabinet-conception_DB 7.jpg,/image/cabinet-home 1.jpg,/image/cabinet-liste-p 2.jpg,/image/cabinet-D_medical 3.jpg,/image/cabinet-ajouter_p 4.jpg,/image/cabinet-ajouter_u 5.jpg,/image/cabinet-auth 6.jpg"
+          />
+          <div class="project-img-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> View Screenshots</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <h4>Cabinet Medical</h4>
+            <div class="project-links">
+              <a href="https://github.com/karroumi23/Travel-agency-1.git" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span>PHP</span><span>MVC</span><span>MySQL</span><span>PDF</span>
+          </div>
+          <p class="project-desc">A PHP MVC app for managing patients, medical records, and users with role-based access (Admin / Super Admin). Features PDF export, patient search, and auto-setup with seed data.</p>
+        </div>
+      </div>
+
+      <!-- Product Management -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="/image/crud-home_form 1 .jpg" alt="Product Management"
+            class="project-thumb"
+            data-images="/image/crud-home_form 1 .jpg,/image/crud-liste 2 .jpg,/image/crud-filter_by_title 3.jpg,/image/crud-filter_by_categorie  4.jpg"
+          />
+          <div class="project-img-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> View Screenshots</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <h4>Product Management</h4>
+            <div class="project-links">
+              <a href="https://product-management-system-crud.netlify.app/" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/karroumi23/CRUD-Product-Management-System.git" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+          <p class="project-desc">A fully functional CRUD Product Management System built with vanilla JS, featuring filtering, search, and a user-friendly interface for managing product data efficiently.</p>
+        </div>
+      </div>
+
+      <!-- Facture En Ligne -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="/image/facture home 1.jpg" alt="Facture En Ligne"
+            class="project-thumb"
+            data-images="/image/facture home 1.jpg,/image/facture pfd button .jpg,/image/facture logo & num facture 2 .jpg,/image/facture info cliant&company 3.jpg,/image/facture tables  Counting & the dates  4.jpg,/image/facture  Devis-table  5.jpg,/image/facture example logo info 6.jpg,/image/facture example 2   7.jpg"
+          />
+          <div class="project-img-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> View Screenshots</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <h4>Facture En Ligne</h4>
+            <div class="project-links">
+              <a href="https://facture-enligne-1.netlify.app/" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/karroumi23/facture-en-ligne-1.git" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span>JavaScript</span><span>HTML</span><span>CSS</span><span>PDF</span>
+          </div>
+          <p class="project-desc">Web-based invoicing tool for freelancers and businesses. Supports custom branding, dynamic client/product fields, auto-calculations (HT, TVA, TTC), and PDF export.</p>
+        </div>
+      </div>
+
+      <!-- Travel Agency -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="/image/travel-agency 1.png" alt="Travel Agency"
+            class="project-thumb"
+            data-images="/image/travel-agency 1.png"
+          />
+          <div class="project-img-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> View Screenshots</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <h4>Travel Agency</h4>
+            <div class="project-links">
+              <a href="https://travel-agency-0.netlify.app/" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/karroumi23/Travel-agency-1.git" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+          <p class="project-desc">A fully responsive and interactive travel agency website with a modern, clean design and seamless user experience across all devices.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <span class="section-tag">What I work with</span>
+      <h2 class="section-title">Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- Tech Skills -->
+      <div class="skills-col">
+        <h3 class="skills-col-title">Technical Stack</h3>
+
+        <div class="tech-cards">
+          <div class="tech-card">
+            <div class="tech-icon php-icon"><i class="fa-brands fa-php"></i></div>
+            <div class="tech-info">
+              <p>PHP</p>
+              <div class="tech-bar"><div class="tech-fill" style="--w:82%"></div></div>
+            </div>
+            <span class="tech-pct">82%</span>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon laravel-icon"><i class="fa-brands fa-laravel"></i></div>
+            <div class="tech-info">
+              <p>Laravel</p>
+              <div class="tech-bar"><div class="tech-fill" style="--w:90%"></div></div>
+            </div>
+            <span class="tech-pct">90%</span>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon react-icon"><i class="fa-brands fa-react"></i></div>
+            <div class="tech-info">
+              <p>React.js</p>
+              <div class="tech-bar"><div class="tech-fill" style="--w:80%"></div></div>
+            </div>
+            <span class="tech-pct">80%</span>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon js-icon"><i class="fa-brands fa-js"></i></div>
+            <div class="tech-info">
+              <p>JavaScript</p>
+              <div class="tech-bar"><div class="tech-fill" style="--w:70%"></div></div>
+            </div>
+            <span class="tech-pct">70%</span>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon db-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="tech-info">
+              <p>MySQL</p>
+              <div class="tech-bar"><div class="tech-fill" style="--w:52%"></div></div>
+            </div>
+            <span class="tech-pct">52%</span>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon bootstrap-icon"><i class="fa-brands fa-bootstrap"></i></div>
+            <div class="tech-info">
+              <p>Bootstrap</p>
+              <div class="tech-bar"><div class="tech-fill" style="--w:80%"></div></div>
+            </div>
+            <span class="tech-pct">80%</span>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon git-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <div class="tech-info">
+              <p>Git / GitHub</p>
+              <div class="tech-bar"><div class="tech-fill" style="--w:70%"></div></div>
+            </div>
+            <span class="tech-pct">70%</span>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon wp-icon"><i class="fa-brands fa-wordpress"></i></div>
+            <div class="tech-info">
+              <p>WordPress</p>
+              <div class="tech-bar"><div class="tech-fill" style="--w:72%"></div></div>
+            </div>
+            <span class="tech-pct">72%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skills-col">
+        <h3 class="skills-col-title">Professional Skills</h3>
+        <div class="soft-grid">
+          <div class="soft-card">
+            <div class="soft-ring" style="--pct:85">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" class="ring-bg"/><circle cx="40" cy="40" r="34" class="ring-fill" style="stroke-dasharray: calc(var(--pct) * 2.136) 213.6"/></svg>
+              <span>85%</span>
+            </div>
+            <p>Team<br/>Collaboration</p>
+          </div>
+          <div class="soft-card">
+            <div class="soft-ring" style="--pct:80">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" class="ring-bg"/><circle cx="40" cy="40" r="34" class="ring-fill" style="stroke-dasharray: calc(var(--pct) * 2.136) 213.6"/></svg>
+              <span>80%</span>
+            </div>
+            <p>Communication</p>
+          </div>
+          <div class="soft-card">
+            <div class="soft-ring" style="--pct:70">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" class="ring-bg"/><circle cx="40" cy="40" r="34" class="ring-fill" style="stroke-dasharray: calc(var(--pct) * 2.136) 213.6"/></svg>
+              <span>70%</span>
+            </div>
+            <p>Problem<br/>Solving</p>
+          </div>
+          <div class="soft-card">
+            <div class="soft-ring" style="--pct:90">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" class="ring-bg"/><circle cx="40" cy="40" r="34" class="ring-fill" style="stroke-dasharray: calc(var(--pct) * 2.136) 213.6"/></svg>
+              <span>90%</span>
+            </div>
+            <p>Adaptability</p>
+          </div>
         </div>
 
-         <a href="#home" class="scroll-top"> 
-          <i class="fa-solid fa-arrow-up"></i>
-         </a>
+        <!-- Extra badges -->
+        <div class="extra-skills">
+          <h4>Also comfortable with</h4>
+          <div class="badge-cloud">
+            <span>REST APIs</span><span>MVC Pattern</span><span>Responsive Design</span>
+            <span>Tailwind CSS</span><span>AJAX</span><span>Figma</span><span>Linux CLI</span>
+          </div>
+        </div>
       </div>
-   <!----- ----------------END-FOOTER -->
+    </div>
+  </section>
 
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <span class="section-tag">Get in touch</span>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
 
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-intro">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
 
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <small>Email</small>
+            <a href="mailto:anasskarroumi2016@gmail.com">anasskarroumi2016@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <small>Phone</small>
+            <a href="tel:+212616548858">+212 616 548 858</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <small>Location</small>
+            <span>Casablanca, Morocco</span>
+          </div>
+        </div>
 
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/karroumi-anass-a241b2173/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/karroumi23" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
 
+      <div class="contact-form-wrap">
+        <form action="https://formspree.io/f/meoqjedk" method="POST" class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="Email"  required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="Subject" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="5"  required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 <span>Karroumi Anass</span>. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/karroumi-anass-a241b2173/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/karroumi23" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:anasskarroumi2016@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <a href="#home" class="scroll-top-btn" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
 
-
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-img" src="">
-  <div class="lightbox-controls">
-    <span class="prev">&#10094;</span>
-    <span class="next">&#10095;</span>
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-backdrop"></div>
+    <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-prev" id="lbPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lb-next" id="lbNext"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lb-img-wrap">
+      <img src="" alt="Project screenshot" id="lbImg" />
+      <div class="lb-counter" id="lbCounter">1 / 1</div>
+    </div>
   </div>
-</div>
-  
-<script src="main.js"></script>
-<!-- aos-animation -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-           offset:300,
-           duration: 1300,
-    });
-  </script>
+
+  <script src="main.js"></script>
 </body>
 </html>
+

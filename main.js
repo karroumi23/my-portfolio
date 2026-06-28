@@ -1,115 +1,178 @@
-//------create function slide-bar(hidding & showing)
-let menuIcon = document.getElementById("menu-icon");
-let slideBar = document.getElementById("slide-bar");
-function showMenu() {
-  menuIcon.classList.toggle("fa-times");
-  slideBar.classList.toggle("active");
+/* =============================================
+   PORTFOLIO — main.js
+============================================= */
+
+// ── Theme toggle ──────────────────────────
+const root = document.documentElement;
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+
+const savedTheme = localStorage.getItem('theme') || 'dark';
+root.setAttribute('data-theme', savedTheme);
+updateThemeIcon(savedTheme);
+
+themeToggle.addEventListener('click', () => {
+  const current = root.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  updateThemeIcon(next);
+});
+
+function updateThemeIcon(theme) {
+  themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
 }
-//<hide the sidebar when clicking anywhere outside of it>
-document.addEventListener("click", function (event) {
-  if (!slideBar.contains(event.target) && !menuIcon.contains(event.target)) {
-    if (slideBar.classList.contains("active")) {
-      slideBar.classList.remove("active");
-      menuIcon.classList.remove("fa-times");
+
+// ── Sticky header ─────────────────────────
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// ── Active nav link on scroll ─────────────
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+      });
     }
-  }
-});
-// create a function to add background color to the header when i scroll down
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 120);
-});
-
-// create function to display and hiding description paragraph
-
-// Select all toggle buttons
-const descriptionBtn = document.querySelectorAll(".description-btn");
-
-// Add click event listener to each button
-descriptionBtn.forEach((button) => {
-  button.addEventListener("click", function () {
-    // Get the associated description element in the same card
-    const descriptionParagraph = this.parentElement.querySelector(
-      ".description-paragraph"
-    );
-
-    // Toggle the visibility
-    descriptionParagraph.classList.toggle("show");
-    // if (descriptionParagraph.style.display === "none" || descriptionParagraph.style.display === "") {
-    //   descriptionParagraph.style.display = "block";
-    // } else {
-    //   descriptionParagraph.style.display = "none";
-    // }
   });
-});
+}, { rootMargin: '-40% 0px -55% 0px' });
 
-// create circles for left-skills
-const circles = document.querySelectorAll(".circle");
+sections.forEach(s => observer.observe(s));
 
-circles.forEach(elem => {
-  var dots = elem.getAttribute("data-dots");
-  var marked = elem.getAttribute("data-percent");
-  var percent = Math.floor(dots * marked / 100); // Calculate the number of marked points
-  var points = "";
-  var rotate = 360 / dots; // Rotation for each point
+// ── Mobile nav ────────────────────────────
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+const mobileNavClose = document.getElementById('mobileNavClose');
+const mobileOverlay = document.getElementById('mobileOverlay');
 
-  for (let i = 0; i < dots; i++) {
-    let isMarked = i < percent ? 'marked' : ''; // Mark the appropriate points
-    points += `<div class="points ${isMarked}" style="--i:${i}; --rot:${rotate}deg"></div>`;
-  }
-
-  elem.innerHTML = points;
-});
-
-
-
-
-// lightbox to show img project slider 
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.querySelector('.lightbox-img');
-const closeBtn = document.querySelector('.lightbox .close');
-const prevBtn = document.querySelector('.lightbox .prev');
-const nextBtn = document.querySelector('.lightbox .next');
-
-let images = [];
-let currentIndex = 0;
-
-// Open lightbox
-document.querySelectorAll('.project-img').forEach(img => {
-  img.addEventListener('click', () => {
-    images = img.dataset.images.split(',');
-    currentIndex = 0;
-    openLightbox(images[currentIndex]);
-  });
-});
-
-function openLightbox(src) {
-  lightbox.style.display = 'block';
-  lightboxImg.src = src;
+function openMobileNav() {
+  mobileNav.classList.add('open');
+  mobileOverlay.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeMobileNav() {
+  mobileNav.classList.remove('open');
+  mobileOverlay.classList.remove('show');
+  document.body.style.overflow = '';
 }
 
-// Close
-closeBtn.onclick = () => {
-  lightbox.style.display = 'none';
-};
-
-// Next/Prev
-nextBtn.onclick = () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  lightboxImg.src = images[currentIndex];
-};
-
-prevBtn.onclick = () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  lightboxImg.src = images[currentIndex];
-};
-
-// Close on outside click
-lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = 'none';
-  }
+hamburger.addEventListener('click', openMobileNav);
+mobileNavClose.addEventListener('click', closeMobileNav);
+mobileOverlay.addEventListener('click', closeMobileNav);
+document.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', closeMobileNav);
 });
 
+// ── Lightbox ──────────────────────────────
+const lightbox = document.getElementById('lightbox');
+const lbImg    = document.getElementById('lbImg');
+const lbCounter = document.getElementById('lbCounter');
+const lbClose  = document.getElementById('lbClose');
+const lbPrev   = document.getElementById('lbPrev');
+const lbNext   = document.getElementById('lbNext');
 
+let lbImages = [];
+let lbIndex  = 0;
+
+function openLightbox(src, all, idx) {
+  lbImages = all;
+  lbIndex  = idx;
+  lbImg.src = src;
+  lbCounter.textContent = `${idx + 1} / ${all.length}`;
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+  lbImg.src = '';
+}
+function showLbImage(idx) {
+  lbIndex = (idx + lbImages.length) % lbImages.length;
+  lbImg.src = lbImages[lbIndex].trim();
+  lbCounter.textContent = `${lbIndex + 1} / ${lbImages.length}`;
+}
+
+// bind thumb clicks
+document.querySelectorAll('.project-thumb').forEach(img => {
+  img.style.cursor = 'pointer';
+  img.addEventListener('click', () => {
+    const all = img.dataset.images.split(',').map(s => s.trim()).filter(Boolean);
+    openLightbox(all[0], all, 0);
+  });
+});
+
+// bind overlay click (same as thumb click)
+document.querySelectorAll('.project-img-wrap').forEach(wrap => {
+  wrap.addEventListener('click', () => {
+    const img = wrap.querySelector('.project-thumb');
+    const all = img.dataset.images.split(',').map(s => s.trim()).filter(Boolean);
+    openLightbox(all[0], all, 0);
+  });
+});
+
+lbClose.addEventListener('click', closeLightbox);
+lbPrev.addEventListener('click', () => showLbImage(lbIndex - 1));
+lbNext.addEventListener('click', () => showLbImage(lbIndex + 1));
+
+// close on backdrop
+document.querySelector('.lb-backdrop').addEventListener('click', closeLightbox);
+
+// keyboard nav
+document.addEventListener('keydown', e => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') showLbImage(lbIndex - 1);
+  if (e.key === 'ArrowRight') showLbImage(lbIndex + 1);
+});
+
+// ── Animate skill bars on scroll ─────────
+const skillObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationPlayState = 'running';
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.tech-fill').forEach(bar => {
+  bar.style.animationPlayState = 'paused';
+  skillObserver.observe(bar);
+});
+
+// ── Fade-in sections ──────────────────────
+const fadeObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.project-card, .tech-card, .soft-card, .about-grid, .contact-grid').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  fadeObserver.observe(el);
+});
+
+// inject visible class
+const style = document.createElement('style');
+style.textContent = `.visible { opacity: 1 !important; transform: translateY(0) !important; }`;
+document.head.appendChild(style);
+
+// ── Contact form feedback ─────────────────
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', () => {
+    const btn = contactForm.querySelector('button[type=submit]');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+  });
+}
