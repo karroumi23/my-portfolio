@@ -98,6 +98,14 @@ descButtons.forEach(btn => {
   });
 });
 
+// -----backoffice-btn-------------------------------
+document.querySelectorAll('.backoffice-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const all = btn.dataset.images.split(',').map(s => s.trim()).filter(Boolean);
+    openLightbox(all[0], all, 0);
+  });
+});
+
 
 
 // ── Lightbox ──────────────────────────────

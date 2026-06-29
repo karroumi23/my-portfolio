@@ -540,7 +540,7 @@ ul { list-style: none; }
   transition: transform var(--transition), box-shadow var(--transition);
   display: flex;
   flex-direction: column;
-  min-height: 420px;
+  min-height: 440px;
 }
 .project-card:hover {
   transform: translateY(-4px);

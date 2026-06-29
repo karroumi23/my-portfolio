@@ -6,6 +6,7 @@
   <title>Karroumi Anass — Full Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" />
@@ -151,7 +152,19 @@
               <div class="project-meta">
                 <h4>Aqualab Technologie</h4>
                 <div class="project-links">
-                  <a href="https://aqualab-tech-ak.gamer.gd/" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://aqualab-tech-ak.gamer.gd/" target="_blank" title="Live Demo">
+                           <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <a class="backoffice-btn" title="Back Office"
+                     data-images="/image/back-office-dashboard.png,
+                                  /image/back-office-Product-list.png,
+                                  /image/back-office-add-product.png,
+                                  /image/back-office-Catégories.png,
+                                  /image/back-office-Create-Catégorie.png,
+                                  /image/back-office-Sections.png,
+                                  /image/back-office-Create-Section.png">
+                     <i class="fa-solid fa-screwdriver-wrench"></i>
+                  </a>
                   <a href="https://github.com/karroumi23/products_project_laravel.git" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
               </div>
@@ -162,10 +175,11 @@
                 <span>MVC</span>
               </div>
               <button class="desc-btn"><i class="fa-solid fa-chevron-down"></i> Description</button>
-              <p class="project-desc">Developed a modern laboratory equipment company website with Laravel 12
-                          and Filament CMS. The platform features dynamic content management, product catalog
-                            with advanced filtering and search, responsive design, and an intuitive admin
-                            dashboard for managing products, categories, services, partners, and homepage sections.
+              <p class="project-desc">Developed a full-stack laboratory equipment platform using Laravel 12 and Filament v3 CMS.
+                The public site features a product catalog with advanced filtering and search, responsive design,
+                and dynamic content across all sections. The back-office is a custom Filament admin dashboard
+                that allows full CRUD management of products, categories, services, partners, and homepage content —
+                with role-based access, media uploads, and real-time content updates <span class="text-success"> touching any code</span>. 
               </p>         
            </div>
       </div>
