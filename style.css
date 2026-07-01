@@ -666,19 +666,19 @@ ul { list-style: none; }
   line-height: 1.7;
   /* display: none; */
   max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  margin-top: 0;
-  transition:
-    max-height .35s ease,
-    opacity .25s ease,
-    margin-top .25s ease;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    transition:
+        max-height .4s ease,
+        opacity .3s ease,
+        margin-top .3s ease;
   
 }
 .project-desc.show {
-  max-height: 250px;
+  /* max-height: 250px; */
   opacity: 1;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 @keyframes fadeSlide {

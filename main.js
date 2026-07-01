@@ -70,32 +70,36 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 });
 
 // ── Project Description Accordion ─────────────────────
-const descButtons = document.querySelectorAll('.desc-btn');
+document.querySelectorAll(".desc-btn").forEach(btn => {
 
-descButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener("click", () => {
 
-    const currentDesc = btn.nextElementSibling;
-    const isOpen = currentDesc.classList.contains('show');
+      const desc = btn.nextElementSibling;
+      const opened = desc.classList.contains("show");
 
-    // Close every card first
-    descButtons.forEach(otherBtn => {
-      otherBtn.classList.remove('open');
-      otherBtn.innerHTML =
-        '<i class="fa-solid fa-chevron-down"></i> Description';
+      if (opened) {
 
-      const otherDesc = otherBtn.nextElementSibling;
-      otherDesc.classList.remove('show');
-    });
+          desc.style.maxHeight = null;
+          desc.classList.remove("show");
 
-    // If it wasn't open, open it
-    if (!isOpen) {
-      currentDesc.classList.add('show');
-      btn.classList.add('open');
-      btn.innerHTML =
-        '<i class="fa-solid fa-chevron-up"></i> Hide';
-    }
+          btn.classList.remove("open");
+          btn.innerHTML =
+              '<i class="fa-solid fa-chevron-down"></i> Description';
+
+      } else {
+
+          desc.classList.add("show");
+
+          // Automatically use the real content height
+          desc.style.maxHeight = desc.scrollHeight + "px";
+
+          btn.classList.add("open");
+          btn.innerHTML =
+              '<i class="fa-solid fa-chevron-up"></i> Hide';
+      }
+
   });
+
 });
 
 // -----backoffice-btn-------------------------------
